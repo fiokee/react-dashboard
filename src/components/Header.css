@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   background: #FFFFFF;
   box-shadow: 1px 0 2px rgba(0,0,0,0.125);
   display: flex;
@@ -46,11 +46,15 @@
  .sidebar{
   position: fixed;
   top: 60px;
+  bottom: 60px;
   left: 0;
-  width: 270px;
+  width: 390px;
   height: 100%;
   color: #53545C;
   background-color: #FFFFFF;
+ }
+ .sidebar:hover{
+  overflow: scroll;
  }
 
  .sidebar ul li a{
@@ -68,7 +72,9 @@
   vertical-align: middle;
   list-style: none;
  }
- 
+ .sidebar ul li a .icon:hover{
+  color: #FFFFFF;
+ }
  .sidebar ul li a .text{
   margin-left: 19px;
   list-style: none;
@@ -77,15 +83,23 @@
   font-size: 18px;
   letter-spacing: 2px;
  }
- 
+ .sidebar ul li a .text:hover{
+  color: #FFFFFF;
+ }
  .sidebar ul li a:hover{
   background: #5570F1;
   border-radius: 16px;
-  color: #FFFFFF;
+  color: #FFF;
  }
 .sidebar li{
   list-style: none;
 }
+
+.container{
+  margin-top: 150px;
+}
+
+
  /* .hover_collapse .sidebar{
   width: 70px;
  }
