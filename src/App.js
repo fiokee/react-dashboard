@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/Dashboard'
+import Orders from './pages/Orders'
+import Customers from './pages/Customers'
+import Inventory from './pages/Inventory'
+import Conversations from './pages/Conversations'
+import Settings from './pages/Settings'
+import SideBar from "./components/SideBar";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+     
+     <BrowserRouter>
+     <SideBar>
+     <Routes>
+     <Route path="/" element={<Dashboard />} />
+     <Route path="/order" element={<Orders />} />
+     <Route path="/customers" element={<Customers />} />
+     <Route path="/inventory" element={<Inventory/>} />
+     <Route path="/conversations" element={<Conversations />} />
+     <Route path="/settings" element={<Settings />} />
+     </Routes>
+     </SideBar>
+     </BrowserRouter>
+     
     </div>
   );
 }
