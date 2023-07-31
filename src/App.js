@@ -8,12 +8,14 @@ import Inventory from './pages/Inventory'
 import Conversations from './pages/Conversations'
 import Settings from './pages/Settings'
 import SideBar from "./components/SideBar";
+import StatBox from "./components/StatBox";
 
 
 function App() {
   return (
     <div className="App">
       <Header/>
+      <StatBox/>
      
      <BrowserRouter>
      <SideBar>

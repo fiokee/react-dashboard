@@ -1,0 +1,64 @@
+
+.box{
+    margin-left: 20rem;
+    border: solid blueviolet;
+    display: flex;
+    float: left;
+}
+.cards{
+    margin: 70px;
+    border: solid white;
+    background-color:  white;
+    border-radius: 20px;
+    height: 200px;
+    width: 20vw;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: solid red;
+}
+.cardcontact{
+    width: 90%;
+    display: block;
+    
+}
+.cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icons img{
+    width: 3rem;
+    padding: 3px;
+  }
+
+  .icons p{
+    color: #BEC0CA;
+  }
+
+  .icons .this-img{
+    width: 1rem;
+  }
+
+  .sales{
+    display: flex;
+    justify-content: space-around;
+    margin: 12px;
+    color: #8B8D97;
+  }
+
+  .price{
+    display: flex;
+    margin: 12px;
+    padding: 12px;
+    justify-content: space-around;
+    color: #45464E;
+    font-weight: bold;
+  }
+
+  .minus{
+    color: #8B8D97;
+  }

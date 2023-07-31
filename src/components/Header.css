@@ -10,6 +10,23 @@
   align-items: center;
  }
 
+ .user{
+  display: flex;
+  margin: 12px;
+  cursor: pointer;
+ }
+
+ .user p{
+  margin: 12px;
+  font-size: 23px;
+ }
+ .bell{
+  color: #5570F1;
+ }
+ .dash{
+  margin-right: 55rem;
+ }
+
  .logo img{
   width: 60%;
  }
@@ -99,11 +116,11 @@
   margin-top: 150px;
 }
 
-
- /* .hover_collapse .sidebar{
+/* 
+  .hover_collapse .sidebar{
   width: 70px;
  }
  
  .hover_collapse .sidebar ul li a .text{
   display: none;
- } */
+ }  */

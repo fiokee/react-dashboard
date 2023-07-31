@@ -1,10 +1,11 @@
 import React from 'react';
-import { FaBars} from 'react-icons/fa';
+import { FaBars, FaUserCircle, FaBell} from 'react-icons/fa';
 import { LuLayoutDashboard} from 'react-icons/lu';
 import { BiSolidShoppingBag} from 'react-icons/bi';
 import {BsPeopleFill} from 'react-icons/bs';
 import {MdOutlineInventory2} from 'react-icons/md';
 import {AiOutlineMessage} from 'react-icons/ai';
+import {RiArrowDropDownLine} from 'react-icons/ri';
 import {FiSettings} from 'react-icons/fi';
 import {SlEarphones} from 'react-icons/sl';
 import {HiOutlineLogout} from 'react-icons/hi';
@@ -26,9 +27,11 @@ const Header = () => {
      <div className="hamburger">
      <i className="fas fa-bars"><FaBars/></i>
      </div>
-     <div>
-      <p>shop</p>
-      <span>Bell</span>
+     <div className='dash'>Dashboard</div>
+     <div className='user'>
+      <p>Nanny's Shop<RiArrowDropDownLine/> </p>
+      <p className='bell'><FaBell/></p>
+      <p><FaUserCircle/></p>
       <img/>
      </div>
    </div>
