@@ -9,14 +9,13 @@ import Conversations from './pages/Conversations'
 import Settings from './pages/Settings'
 import SideBar from "./components/SideBar";
 import StatBox from "./components/StatBox";
-
+import SideNav from "./components/SideNav";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <StatBox/>
      
+     <SideNav/>
      <BrowserRouter>
      <SideBar>
      <Routes>
