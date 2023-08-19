@@ -5,8 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #EEF0FA;
+  /* background-color: #07112D; */
 }
+
+/* .App{
+  outline-color: #07112D;
+  border:12px solid #07112D;
+  border-radius: 12px;
+  margin-top: 100px;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

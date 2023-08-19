@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-
-
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -32,6 +30,8 @@ import Lead from '../assets/medal-star.png';
 import Setting from '../assets/security-user.png';
 import Bank from '../assets/radar.png';
 import ChevIcon from '../assets/Icon.png';
+import Bell from '../assets/notification-bing.png'
+import Profile from '../assets/Group 10634.png'
 
 const drawerWidth = 290;
 
@@ -94,10 +94,17 @@ export default function SideNav() {
   };
 
   return (
-    <Box sx={{ display: 'flex'}}>
+    <Box sx={{ display: 'flex', height: '100vh', border: 'solid 16px #07112D'}} >
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
-        <Toolbar>
+      <AppBar position="fixed" open={open} sx={
+          { backgroundColor: 
+          '#FFFFFF', 
+          color: '#000', 
+          borderRadius: '30px',
+          height: '100px',
+          marginTop: '15px',
+          }}>
+        <Toolbar >
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -107,8 +114,16 @@ export default function SideNav() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Persistent drawer
+          <Typography  variant="h6" noWrap component="div">
+           Analytics Dashboard
+          </Typography>
+
+          <Typography  variant="h6" noWrap component="div">
+           <img src={Bell}/>
+          </Typography>
+
+          <Typography  variant="h6" noWrap component="div">
+          <img src={Profile}/>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -253,23 +268,10 @@ export default function SideNav() {
          </ListItem>
      </List>
       </Drawer>
-      <Main open={open} >
+      <Main open={open}  >
         <DrawerHeader />
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
-          enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
-          imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
-          Convallis convallis tellus id interdum velit laoreet id donec ultrices.
-          Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
-          nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
-          leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
-          feugiat vivamus at augue. At augue eget arcu dictum varius duis at
-          consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
-          sapien faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
+        
+        <Typography paragraph >
           Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
           eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
           neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra

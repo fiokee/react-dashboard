@@ -10,10 +10,11 @@ import Settings from './pages/Settings'
 import SideBar from "./components/SideBar";
 import StatBox from "./components/StatBox";
 import SideNav from "./components/SideNav";
+import './index.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
      
      <SideNav/>
      <BrowserRouter>
